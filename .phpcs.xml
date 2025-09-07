@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ruleset name="EventPlugin">
+  <description>PHPCS rules for the Event Registration Plugin</description>
+
+  <file>./event-plugin.php</file>
+  <file>./includes</file>
+  <file>./templates</file>
+
+  <!-- WordPress Coding Standards -->
+  <rule ref="WordPress"/>
+  <rule ref="WordPress-Core"/>
+  <rule ref="WordPress-Extra"/>
+  <rule ref="WordPress-Docs"/>
+  <rule ref="WordPress-VIP-Go"/>
+
+  <!-- Exclude auto-generated or external files -->
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+
+  <!-- Settings -->
+  <arg name="extensions" value="php"/>
+  <arg name="tab-width" value="4"/>
+</ruleset>

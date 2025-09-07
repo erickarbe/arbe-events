@@ -1,0 +1,40 @@
+# Plugin-specific ignores
+AI_PLUGIN_GUIDE.md
+TODO.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node / package managers
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Composer / PHP tools
+vendor/
+composer.lock
+
+# Environment configs
+.env
+.env.local
+
+# IDEs
+.vscode/
+.idea/
+*.code-workspace
+
+# Build / caches
+.cache/
+dist/
+build/
+
+# OS metadata
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# WordPress uploads / log dirs (if local dev)
+wp-content/uploads/
+logs/
