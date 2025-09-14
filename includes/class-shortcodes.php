@@ -13,6 +13,14 @@ class AE_Shortcodes {
 
         if (!$event_id) return '';
 
+        // Enqueue frontend form styles.
+        wp_enqueue_style(
+            'ae-frontend-form',
+            AE_PLUGIN_URL . 'assets/css/frontend-form.css',
+            [],
+            AE_PLUGIN_VERSION
+        );
+
         ob_start();
         include AE_PLUGIN_PATH . 'templates/registration-form.php';
         return ob_get_clean();
